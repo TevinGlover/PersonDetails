@@ -15,8 +15,9 @@ public class PersonHandler {
     
     public String whileLoop() {
         String result = "";
-        // create a `counter`
-        // while `counter` is less than length of array
+       int count = 0; // create a `counter`
+
+           //while ( )// while `counter` is less than length of array
             // begin loop
 
                 // use `counter` to identify the `current Person` in the array
