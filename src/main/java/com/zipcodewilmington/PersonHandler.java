@@ -18,9 +18,11 @@ public class PersonHandler {
        int count = 0; // create a `counter`
 
            while ( count <= personArray.length -1) {// while `counter` is less than length of array
+               // need -1 to stay in bonds
                // begin loop
                count++;
                Person personAtIndex = personArray[count-1];// use `counter` to identify the `current Person` in the array
+                //the count must be - one to not skip the frist indx
                String personName = personAtIndex.toString(); // get `string Representation` of `currentPerson`
                result += personName; // append `stringRepresentation` to `result` variable
            }
@@ -30,23 +32,25 @@ public class PersonHandler {
 
 
 
-    public String forLoop() {
+    public String forLoop( ) {
         String result = "";
-        // identify initial value
-        // identify terminal condition
-        // identify increment
+
+        int count = 0; // identify initial value
+        String perx;// identify terminal condition
+        int i = 0; // identify increment
 
         // use the above clauses to declare for-loop signature
-            // begin loop
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
+        for (i = 0; i <= personArray.length-1 ; i++) {  // begin loop
+            count++;  // use `counter` to identify the `current Person` in the array
+            Person x = personArray[count - 1]; // get `string Representation` of `currentPerson`
+            perx = x.toString();  // append `stringRepresentation` to `result` variable
+            result += perx;
             // end loop
 
+
+        }
         return result;
     }
-
-
 
     public String forEachLoop() {
         String result = "";
