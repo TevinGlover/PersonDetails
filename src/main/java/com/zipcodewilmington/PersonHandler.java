@@ -17,13 +17,13 @@ public class PersonHandler {
         String result = "";
        int count = 0; // create a `counter`
 
-           while ( )// while `counter` is less than length of array
-            // begin loop
-
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-
+           while ( count <= personArray.length -1) {// while `counter` is less than length of array
+               // begin loop
+               count++;
+               Person personAtIndex = personArray[count-1];// use `counter` to identify the `current Person` in the array
+               String personName = personAtIndex.toString(); // get `string Representation` of `currentPerson`
+               result += personName; // append `stringRepresentation` to `result` variable
+           }
             // end loop
         return result;
     }
